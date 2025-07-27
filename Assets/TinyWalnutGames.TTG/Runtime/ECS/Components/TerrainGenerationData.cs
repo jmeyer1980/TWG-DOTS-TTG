@@ -116,8 +116,14 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
     /// <summary>
     /// Component that holds mesh data during terrain generation pipeline.
     /// Uses blob assets for efficient data storage and transfer.
+    /// 
+    /// NOW ENABLEABLE: After mesh creation, this component is disabled rather than removed,
+    /// allowing tests to verify its presence while preventing reprocessing by systems.
+    /// 
+    /// This solves the timing issue where tests expect the component to exist for validation
+    /// but systems need to mark it as "processed" to prevent reprocessing.
     /// </summary>
-    public struct MeshDataComponent : IComponentData
+    public struct MeshDataComponent : IComponentData, IEnableableComponent
     {
         public BlobAssetReference<BlobArray<float3>> Vertices;
         public BlobAssetReference<BlobArray<int>> Indices;

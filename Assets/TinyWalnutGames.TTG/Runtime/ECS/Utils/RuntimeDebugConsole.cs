@@ -736,9 +736,14 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             }
         }
         
+        /// <summary>
+        /// Update status display if console is visible and status text exists.
+        /// </summary>
         private void UpdateStatusDisplay()
         {
-            if (statusText == null || !isVisible) return;
+            // UNT0008 FIX: Avoid null propagation with Unity objects
+            if (!isVisible) return;
+            if (statusText == null) return;
             
             var status = new System.Text.StringBuilder();
             status.AppendLine("=== TTG STATUS ===");
@@ -1326,8 +1331,7 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             
             foreach (var go in terrainObjects)
             {
-                var meshRenderer = go.GetComponent<MeshRenderer>();
-                if (meshRenderer == null)
+                if (!go.TryGetComponent<MeshRenderer>(out var meshRenderer))
                 {
                     result.AppendLine($"❌ {go.name}: No MeshRenderer");
                     continue;
@@ -1439,7 +1443,11 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             var result = new System.Text.StringBuilder();
             result.AppendLine("=== VISIBILITY FACTORS ANALYSIS ===");
             
-            var camera = Camera.main ?? FindFirstObjectByType<Camera>();
+            var camera = FindFirstObjectByType<Camera>();
+            if (camera == null && FindObjectsByType<Camera>(FindObjectsSortMode.None).Length > 0)
+            {
+                camera = FindObjectsByType<Camera>(FindObjectsSortMode.None)[0];
+            }
             if (camera == null)
             {
                 result.AppendLine("❌ No camera found in scene!");
@@ -1484,6 +1492,7 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                     continue;
                 }
                 
+                // UNT0008 FIX: Avoid null propagation with Unity objects
                 var meshRenderer = go.GetComponent<MeshRenderer>();
                 if (meshRenderer == null)
                 {
@@ -1528,7 +1537,7 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                 var visibilityFactors = new List<string>();
                 if (go.activeInHierarchy) visibilityFactors.Add("Active");
                 if ((camera.cullingMask & layerMask) != 0) visibilityFactors.Add("Layer OK");
-                if (meshRenderer?.enabled == true) visibilityFactors.Add("Renderer OK");
+                if (meshRenderer != null && meshRenderer.enabled) visibilityFactors.Add("Renderer OK");
                 if (inFrustum) visibilityFactors.Add("In Frustum");
                 if (distance >= camera.nearClipPlane && distance <= camera.farClipPlane) visibilityFactors.Add("In Range");
                 if (validMaterials > 0) visibilityFactors.Add("Has Materials");

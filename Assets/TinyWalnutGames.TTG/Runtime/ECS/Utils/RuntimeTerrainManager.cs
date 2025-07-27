@@ -49,7 +49,7 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
         public bool createDefaultTerrainEntity = true;
         
         [Tooltip("Default terrain generation parameters")]
-        public TerrainGenerationData defaultTerrainData = new TerrainGenerationData
+        public TerrainGenerationData defaultTerrainData = new()
         {
             TerrainType = TerrainType.Planar,
             Sides = 6,
@@ -348,17 +348,31 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
         /// </summary>
         public bool IsTerrainSystemAvailable()
         {
-            if (world == null)
+            // SAFETY: Check world validity before accessing EntityManager
+            if (world == null || !world.IsCreated)
                 return false;
                 
-            var entityManager = world.EntityManager;
-            
-            // Check if terrain generation entities exist
-            using var query = entityManager.CreateEntityQuery(
-                ComponentType.ReadOnly<TerrainGenerationData>()
-            );
-            
-            return query.CalculateEntityCount() > 0;
+            try
+            {
+                var entityManager = world.EntityManager;
+                
+                // Check if terrain generation entities exist
+                using var query = entityManager.CreateEntityQuery(
+                    ComponentType.ReadOnly<TerrainGenerationData>()
+                );
+                
+                return query.CalculateEntityCount() > 0;
+            }
+            catch (System.ObjectDisposedException)
+            {
+                // World was disposed, return false
+                return false;
+            }
+            catch (System.Exception)
+            {
+                // Any other error, assume not available
+                return false;
+            }
         }
         
         /// <summary>
@@ -366,16 +380,31 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
         /// </summary>
         public int GetTerrainEntityCount()
         {
-            if (world == null)
+            // SAFETY: Check world validity before accessing EntityManager
+            if (world == null || !world.IsCreated)
                 return 0;
                 
-            var entityManager = world.EntityManager;
-            
-            using var query = entityManager.CreateEntityQuery(
-                ComponentType.ReadOnly<TerrainGenerationData>()
-            );
-            
-            return query.CalculateEntityCount();
+            try
+            {
+                var entityManager = world.EntityManager;
+                
+                using var query = entityManager.CreateEntityQuery(
+                    ComponentType.ReadOnly<TerrainGenerationData>()
+                );
+                
+                return query.CalculateEntityCount();
+            }
+            catch (System.ObjectDisposedException)
+            {
+                // World was disposed, return 0
+                return 0;
+            }
+            catch (System.Exception ex)
+            {
+                if (enableDebugLogs)
+                    Debug.LogWarning($"Error getting terrain entity count: {ex.Message}");
+                return 0;
+            }
         }
         
         /// <summary>
@@ -390,8 +419,27 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             
             if (loaderSystem != null)
             {
-                info += $"Pending Scene Requests: {loaderSystem.HasPendingSceneRequests()}\n";
-                info += $"Processed Scenes: {loaderSystem.GetProcessedSceneCount()}\n";
+                try
+                {
+                    info += $"Pending Scene Requests: {loaderSystem.HasPendingSceneRequests()}\n";
+                }
+                catch (System.Exception)
+                {
+                    info += "Pending Scene Requests: Unknown (system unavailable)\n";
+                }
+            }
+            else
+            {
+                info += "Loader System: Not available\n";
+            }
+            
+            if (world != null && world.IsCreated)
+            {
+                info += $"ECS World: Available\n";
+            }
+            else
+            {
+                info += $"ECS World: Not available\n";
             }
             
             return info;
@@ -441,30 +489,45 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
         }
         
         /// <summary>
-        /// Update the terrain entity count for monitoring.
+        /// Update terrain entity count safely.
         /// </summary>
-        [ContextMenu("Update Terrain Entity Count")]
         public void UpdateTerrainEntityCount()
         {
-            terrainEntityCount = GetTerrainEntityCount();
+            int newTerrainEntityCount = GetTerrainEntityCount();
+            terrainEntityCount = newTerrainEntityCount;
             
-            if (enableDebugLogs)
+            if (enableDebugLogs && hasInitialized)
                 Debug.Log($"Terrain entity count updated: {terrainEntityCount}");
         }
         
+        private float lastUpdateTime;
+        
+        // SAFETY: Update method should handle disposed world gracefully
         private void Update()
         {
-            // Periodically update terrain entity count for monitoring
-            if (hasInitialized && Time.time % 2f < Time.deltaTime) // Every 2 seconds
+            // Don't update if not initialized or world is invalid
+            if (!hasInitialized || world == null || !world.IsCreated)
+                return;
+                
+            try
             {
-                var newCount = GetTerrainEntityCount();
-                if (newCount != terrainEntityCount)
+                // Update terrain entity count periodically
+                if (Time.time - lastUpdateTime >= 1.0f) // Update every second
                 {
-                    terrainEntityCount = newCount;
-                    
-                    if (enableDebugLogs)
-                        Debug.Log($"Terrain entity count changed: {terrainEntityCount}");
+                    UpdateTerrainEntityCount();
+                    lastUpdateTime = Time.time;
                 }
+            }
+            catch (System.ObjectDisposedException)
+            {
+                // World was disposed during test cleanup, this is expected
+                hasInitialized = false;
+                world = null;
+            }
+            catch (System.Exception ex)
+            {
+                if (enableDebugLogs)
+                    Debug.LogWarning($"RuntimeTerrainManager Update error: {ex.Message}");
             }
         }
         

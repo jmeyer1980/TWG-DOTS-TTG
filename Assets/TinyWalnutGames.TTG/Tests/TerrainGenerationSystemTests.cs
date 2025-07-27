@@ -475,9 +475,9 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             // Create and add mesh data
             var vertices = new float3[]
             {
-                new float3(0, 0, 0),
-                new float3(1, 0, 0),
-                new float3(0.5f, 1, 0)
+                new(0, 0, 0),
+                new(1, 0, 0),
+                new(0.5f, 1, 0)
             };
             var indices = new int[] { 0, 1, 2 };
             

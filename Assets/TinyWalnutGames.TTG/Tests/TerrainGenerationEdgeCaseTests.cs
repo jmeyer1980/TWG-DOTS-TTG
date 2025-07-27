@@ -416,7 +416,7 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             };
             Manager.AddComponentData(entity, state);
             
-            // Should not crash when missing components
+            // Should not crash when missing components - system handles this gracefully
             Assert.DoesNotThrow(() => terrainGenerationSystem.Update());
             
             // Clean up

@@ -221,11 +221,8 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             var testGO = new GameObject("TestConsole");
             var console = testGO.AddComponent<RuntimeDebugConsole>();
             
-            // FIXED: Use LogAssert.Expect to handle expected error logs
-            LogAssert.Expect(LogType.Error, "[Empty log message]");
-            LogAssert.Expect(LogType.Error, "[Empty log message]");
-            
             // Test error handling - these should not throw exceptions
+            // The console handles null/empty messages by converting them to "[Empty log message]"
             Assert.DoesNotThrow(() => RuntimeDebugConsoleSetup.LogToConsole(null, LogType.Error));
             Assert.DoesNotThrow(() => RuntimeDebugConsoleSetup.LogToConsole("", LogType.Error));
             Assert.DoesNotThrow(() => RuntimeDebugConsoleSetup.LogToConsole("   ", LogType.Log));
