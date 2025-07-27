@@ -1,0 +1,39 @@
+{
+    "name": "TinyWalnutGames.TTG.TerrainGeneration.Tests",
+    "rootNamespace": "TinyWalnutGames.TTG.TerrainGeneration.Tests",
+    "references": [
+        "TinyWalnutGames.TTG.TerrainGeneration",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Entities",
+        "Unity.Entities.Graphics",
+        "Unity.Entities.Hybrid",
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework",
+        "Unity.Mathematics",
+        "Unity.PerformanceTesting",
+        "Unity.Scenes",
+        "Unity.Transforms"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.performance.testing",
+            "expression": "2.0.0",
+            "define": "UNITY_PERFORMANCE_TESTING"
+        }
+    ],
+    "noEngineReferences": false
+}

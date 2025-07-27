@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="151" result="Failed(Child)" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2025-07-26 19:12:12Z" end-time="2025-07-26 19:14:20Z" duration="128.4846567">
+  <test-suite type="TestSuite" id="1172" name="TTG" fullname="TTG" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2025-07-26 19:12:12Z" end-time="2025-07-26 19:14:20Z" duration="128.484657" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1164" name="TinyWalnutGames.TTG.TerrainGeneration.Tests.dll" fullname="D:/Tiny Walnut Games/TTG/Library/ScriptAssemblies/TinyWalnutGames.TTG.TerrainGeneration.Tests.dll" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2025-07-26 19:12:12Z" end-time="2025-07-26 19:14:20Z" duration="127.897225" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="25588" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1165" name="TinyWalnutGames" fullname="TinyWalnutGames" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2025-07-26 19:12:13Z" end-time="2025-07-26 19:14:20Z" duration="127.309285" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1166" name="TTG" fullname="TinyWalnutGames.TTG" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2025-07-26 19:12:13Z" end-time="2025-07-26 19:14:20Z" duration="126.731074" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1167" name="TerrainGeneration" fullname="TinyWalnutGames.TTG.TerrainGeneration" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2025-07-26 19:12:14Z" end-time="2025-07-26 19:14:20Z" duration="126.153526" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestSuite" id="1168" name="Tests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2025-07-26 19:12:14Z" end-time="2025-07-26 19:14:20Z" duration="125.577380" total="151" passed="145" failed="6" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="1001" name="ECSTestsFixtureVerificationTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.ECSTestsFixtureVerificationTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.ECSTestsFixtureVerificationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2025-07-26 19:12:15Z" end-time="2025-07-26 19:12:16Z" duration="0.664503" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1002" name="ECSTestsFixture_CanCreateEntities" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.ECSTestsFixtureVerificationTests.ECSTestsFixture_CanCreateEntities" methodname="ECSTestsFixture_CanCreateEntities" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.ECSTestsFixtureVerificationTests" runstate="Runnable" seed="887921729" result="Passed" start-time="2025-07-26 19:12:16Z" end-time="2025-07-26 19:12:16Z" duration="0.037804" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1003" name="ECSTestsFixture_WorldIsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.ECSTestsFixtureVerificationTests.ECSTestsFixture_WorldIsValid" methodname="ECSTestsFixture_WorldIsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.ECSTestsFixtureVerificationTests" runstate="Runnable" seed="818658130" result="Passed" start-time="2025-07-26 19:12:16Z" end-time="2025-07-26 19:12:16Z" duration="0.001348" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1004" name="MeshCreationSystemTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-26 19:12:16Z" end-time="2025-07-26 19:12:30Z" duration="14.175667" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1010" name="MeshCreationSystem_AlreadyProcessed_DoesNotReprocess" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_AlreadyProcessed_DoesNotReprocess" methodname="MeshCreationSystem_AlreadyProcessed_DoesNotReprocess" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="1547227158" result="Passed" start-time="2025-07-26 19:12:16Z" end-time="2025-07-26 19:12:18Z" duration="1.773966" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:1). Created mesh entity Entity(84:1) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1008" name="MeshCreationSystem_BlobAssetCleanup_DisposesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_BlobAssetCleanup_DisposesCorrectly" methodname="MeshCreationSystem_BlobAssetCleanup_DisposesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="2117954016" result="Passed" start-time="2025-07-26 19:12:18Z" end-time="2025-07-26 19:12:19Z" duration="1.159140" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:3). Created mesh entity Entity(84:3) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1005" name="MeshCreationSystem_CompleteTerrain_CreatesMeshAndGameObject" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_CompleteTerrain_CreatesMeshAndGameObject" methodname="MeshCreationSystem_CompleteTerrain_CreatesMeshAndGameObject" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="160149659" result="Passed" start-time="2025-07-26 19:12:19Z" end-time="2025-07-26 19:12:20Z" duration="1.156839" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:5). Created mesh entity Entity(84:5) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1013" name="MeshCreationSystem_CreatedMesh_HasValidGeometry" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_CreatedMesh_HasValidGeometry" methodname="MeshCreationSystem_CreatedMesh_HasValidGeometry" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="30880238" result="Passed" start-time="2025-07-26 19:12:20Z" end-time="2025-07-26 19:12:22Z" duration="1.167553" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:7). Created mesh entity Entity(84:7) with GameObject 'GeneratedTerrain_83' containing 4 vertices and 2 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1014" name="MeshCreationSystem_GameObjectNaming_IsConsistent" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_GameObjectNaming_IsConsistent" methodname="MeshCreationSystem_GameObjectNaming_IsConsistent" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="661938397" result="Passed" start-time="2025-07-26 19:12:22Z" end-time="2025-07-26 19:12:23Z" duration="1.719262" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:9). Created mesh entity Entity(85:1) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+Terrain generation completed for entity Entity(84:9). Created mesh entity Entity(86:1) with GameObject 'GeneratedTerrain_84' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1009" name="MeshCreationSystem_IncompleteGeneration_DoesNotProcess" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_IncompleteGeneration_DoesNotProcess" methodname="MeshCreationSystem_IncompleteGeneration_DoesNotProcess" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="2124499128" result="Passed" start-time="2025-07-26 19:12:23Z" end-time="2025-07-26 19:12:24Z" duration="0.629783" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+]]></output>
+                </test-case>
+                <test-case id="1012" name="MeshCreationSystem_MeshEntity_HasCorrectComponents" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_MeshEntity_HasCorrectComponents" methodname="MeshCreationSystem_MeshEntity_HasCorrectComponents" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="481933537" result="Passed" start-time="2025-07-26 19:12:24Z" end-time="2025-07-26 19:12:25Z" duration="1.277092" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:13). Created mesh entity Entity(84:11) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1011" name="MeshCreationSystem_MultipleEntities_ProcessesAll" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_MultipleEntities_ProcessesAll" methodname="MeshCreationSystem_MultipleEntities_ProcessesAll" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="1088365340" result="Passed" start-time="2025-07-26 19:12:25Z" end-time="2025-07-26 19:12:28Z" duration="2.338691" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:15). Created mesh entity Entity(86:3) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+Terrain generation completed for entity Entity(84:13). Created mesh entity Entity(87:1) with GameObject 'GeneratedTerrain_84' containing 4 vertices and 1 triangles.
+Terrain generation completed for entity Entity(85:3). Created mesh entity Entity(88:1) with GameObject 'GeneratedTerrain_85' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1006" name="MeshCreationSystem_URPMaterialFallback_CreatesValidMaterial" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_URPMaterialFallback_CreatesValidMaterial" methodname="MeshCreationSystem_URPMaterialFallback_CreatesValidMaterial" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="154690206" result="Passed" start-time="2025-07-26 19:12:28Z" end-time="2025-07-26 19:12:29Z" duration="1.158114" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:17). Created mesh entity Entity(84:15) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1007" name="MeshCreationSystem_WithCustomMaterials_AppliesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests.MeshCreationSystem_WithCustomMaterials_AppliesCorrectly" methodname="MeshCreationSystem_WithCustomMaterials_AppliesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.MeshCreationSystemTests" runstate="Runnable" seed="717030211" result="Passed" start-time="2025-07-26 19:12:29Z" end-time="2025-07-26 19:12:30Z" duration="1.178325" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:19). Created mesh entity Entity(84:17) with GameObject 'GeneratedTerrain_83' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1015" name="RuntimeDebugConsoleTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2025-07-26 19:12:30Z" end-time="2025-07-26 19:12:31Z" duration="0.730240" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1022" name="RuntimeDebugConsole_AutoScroll_CanBeToggled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_AutoScroll_CanBeToggled" methodname="RuntimeDebugConsole_AutoScroll_CanBeToggled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1479236601" result="Passed" start-time="2025-07-26 19:12:30Z" end-time="2025-07-26 19:12:31Z" duration="0.036082" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1021" name="RuntimeDebugConsole_BackgroundOpacity_CanBeSet" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_BackgroundOpacity_CanBeSet" methodname="RuntimeDebugConsole_BackgroundOpacity_CanBeSet" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1748931194" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004410" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1029" name="RuntimeDebugConsole_ComponentDestruction_HandlesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_ComponentDestruction_HandlesCorrectly" methodname="RuntimeDebugConsole_ComponentDestruction_HandlesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="742713659" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.006563" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+]]></output>
+                </test-case>
+                <test-case id="1017" name="RuntimeDebugConsole_Configuration_CanBeModified" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_Configuration_CanBeModified" methodname="RuntimeDebugConsole_Configuration_CanBeModified" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="481517595" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004888" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1025" name="RuntimeDebugConsole_ConsoleComponents_CanBeAccessed" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_ConsoleComponents_CanBeAccessed" methodname="RuntimeDebugConsole_ConsoleComponents_CanBeAccessed" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="2140351662" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004307" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1030" name="RuntimeDebugConsole_ErrorHandling_GracefulDegradation" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_ErrorHandling_GracefulDegradation" methodname="RuntimeDebugConsole_ErrorHandling_GracefulDegradation" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1717382939" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.009812" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+[Empty log message]
+[Empty log message]
+   
+]]></output>
+                </test-case>
+                <test-case id="1028" name="RuntimeDebugConsole_GameObjectCreation_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_GameObjectCreation_WorksCorrectly" methodname="RuntimeDebugConsole_GameObjectCreation_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="108682033" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.006371" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+]]></output>
+                </test-case>
+                <test-case id="1016" name="RuntimeDebugConsole_InitialState_IsCorrect" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_InitialState_IsCorrect" methodname="RuntimeDebugConsole_InitialState_IsCorrect" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="211291192" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004464" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1033" name="RuntimeDebugConsole_InputMethodEnum_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_InputMethodEnum_IsValid" methodname="RuntimeDebugConsole_InputMethodEnum_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="929728215" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004424" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1018" name="RuntimeDebugConsole_InputMode_Configuration" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_InputMode_Configuration" methodname="RuntimeDebugConsole_InputMode_Configuration" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="984078915" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004853" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1024" name="RuntimeDebugConsole_InputSystemSettings_CanBeConfigured" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_InputSystemSettings_CanBeConfigured" methodname="RuntimeDebugConsole_InputSystemSettings_CanBeConfigured" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1057996590" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.007793" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <reason>
+                    <message><![CDATA[Input System configuration test completed]]></message>
+                  </reason>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1019" name="RuntimeDebugConsole_MaxLogEntries_CanBeSet" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_MaxLogEntries_CanBeSet" methodname="RuntimeDebugConsole_MaxLogEntries_CanBeSet" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1669249721" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004892" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1032" name="RuntimeDebugConsole_MultipleInstances_HandleCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_MultipleInstances_HandleCorrectly" methodname="RuntimeDebugConsole_MultipleInstances_HandleCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1995951213" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.007419" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+]]></output>
+                </test-case>
+                <test-case id="1034" name="RuntimeDebugConsole_RangeValidation_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_RangeValidation_WorksCorrectly" methodname="RuntimeDebugConsole_RangeValidation_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1341833695" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004067" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1023" name="RuntimeDebugConsole_ShowTimestamps_CanBeToggled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_ShowTimestamps_CanBeToggled" methodname="RuntimeDebugConsole_ShowTimestamps_CanBeToggled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="650155262" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004691" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1031" name="RuntimeDebugConsole_TerrainManagerIntegration_HandlesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_TerrainManagerIntegration_HandlesCorrectly" methodname="RuntimeDebugConsole_TerrainManagerIntegration_HandlesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="54276968" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.005271" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+Test with terrain manager
+]]></output>
+                </test-case>
+                <test-case id="1020" name="RuntimeDebugConsole_ToggleKey_CanBeSet" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsole_ToggleKey_CanBeSet" methodname="RuntimeDebugConsole_ToggleKey_CanBeSet" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="1004021042" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.004409" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1027" name="RuntimeDebugConsoleSetup_GetConsoleInstance_HandlesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsoleSetup_GetConsoleInstance_HandlesCorrectly" methodname="RuntimeDebugConsoleSetup_GetConsoleInstance_HandlesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="927939316" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.006156" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+]]></output>
+                </test-case>
+                <test-case id="1026" name="RuntimeDebugConsoleSetup_StaticMethods_WorkCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests.RuntimeDebugConsoleSetup_StaticMethods_WorkCorrectly" methodname="RuntimeDebugConsoleSetup_StaticMethods_WorkCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeDebugConsoleTests" runstate="Runnable" seed="2132132935" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.006030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+Test message
+]]></output>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1035" name="RuntimeTerrainManagerTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.732794" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <output><![CDATA[RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+]]></output>
+                <test-case id="1048" name="RuntimeTerrainManager_AutoInitializeOnStart_CanBeToggled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_AutoInitializeOnStart_CanBeToggled" methodname="RuntimeTerrainManager_AutoInitializeOnStart_CanBeToggled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="954731855" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000468" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1051" name="RuntimeTerrainManager_CreateDefaultTerrainEntity_CanBeToggled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_CreateDefaultTerrainEntity_CanBeToggled" methodname="RuntimeTerrainManager_CreateDefaultTerrainEntity_CanBeToggled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1754071470" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000178" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1042" name="RuntimeTerrainManager_CreateTerrainGenerationRequest_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_CreateTerrainGenerationRequest_WorksCorrectly" methodname="RuntimeTerrainManager_CreateTerrainGenerationRequest_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="522021330" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.007357" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1047" name="RuntimeTerrainManager_DebugLogging_CanBeToggled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_DebugLogging_CanBeToggled" methodname="RuntimeTerrainManager_DebugLogging_CanBeToggled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="191247509" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000235" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1040" name="RuntimeTerrainManager_DefaultTerrainData_HasValidValues" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_DefaultTerrainData_HasValidValues" methodname="RuntimeTerrainManager_DefaultTerrainData_HasValidValues" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1806248500" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.001140" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1052" name="RuntimeTerrainManager_DestroyBehavior_HandlesCleanup" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_DestroyBehavior_HandlesCleanup" methodname="RuntimeTerrainManager_DestroyBehavior_HandlesCleanup" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="2114857699" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000552" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <reason>
+                    <message><![CDATA[GameObject destruction handled without errors]]></message>
+                  </reason>
+                </test-case>
+                <test-case id="1054" name="RuntimeTerrainManager_ExtremeDelayValues_HandlesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_ExtremeDelayValues_HandlesCorrectly" methodname="RuntimeTerrainManager_ExtremeDelayValues_HandlesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1746308386" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000365" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1038" name="RuntimeTerrainManager_GetSystemStatusInfo_ReturnsValidInfo" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_GetSystemStatusInfo_ReturnsValidInfo" methodname="RuntimeTerrainManager_GetSystemStatusInfo_ReturnsValidInfo" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="46868175" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000971" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1045" name="RuntimeTerrainManager_GetTerrainEntityCount_ReturnsValidCount" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_GetTerrainEntityCount_ReturnsValidCount" methodname="RuntimeTerrainManager_GetTerrainEntityCount_ReturnsValidCount" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="808321111" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000168" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1050" name="RuntimeTerrainManager_InitializationDelay_CanBeSet" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_InitializationDelay_CanBeSet" methodname="RuntimeTerrainManager_InitializationDelay_CanBeSet" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1354447403" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000195" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1036" name="RuntimeTerrainManager_InitialState_HasCorrectDefaults" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_InitialState_HasCorrectDefaults" methodname="RuntimeTerrainManager_InitialState_HasCorrectDefaults" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1572768354" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000471" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1053" name="RuntimeTerrainManager_InvalidSceneConfiguration_HandlesGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_InvalidSceneConfiguration_HandlesGracefully" methodname="RuntimeTerrainManager_InvalidSceneConfiguration_HandlesGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1549816228" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000298" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1055" name="RuntimeTerrainManager_IsInitialized_ReflectsState" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_IsInitialized_ReflectsState" methodname="RuntimeTerrainManager_IsInitialized_ReflectsState" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="472950092" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000243" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1046" name="RuntimeTerrainManager_IsTerrainSystemAvailable_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_IsTerrainSystemAvailable_WorksCorrectly" methodname="RuntimeTerrainManager_IsTerrainSystemAvailable_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1895771039" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000193" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1037" name="RuntimeTerrainManager_ManualInitialization_UpdatesStatus" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_ManualInitialization_UpdatesStatus" methodname="RuntimeTerrainManager_ManualInitialization_UpdatesStatus" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="110394646" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000276" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1039" name="RuntimeTerrainManager_MultipleInitialization_HandlesSafely" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_MultipleInitialization_HandlesSafely" methodname="RuntimeTerrainManager_MultipleInitialization_HandlesSafely" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1255331048" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000259" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1044" name="RuntimeTerrainManager_ReloadUsingUnitySceneManager_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_ReloadUsingUnitySceneManager_WorksCorrectly" methodname="RuntimeTerrainManager_ReloadUsingUnitySceneManager_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="352768531" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.001894" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1041" name="RuntimeTerrainManager_TerrainSceneConfiguration_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_TerrainSceneConfiguration_IsValid" methodname="RuntimeTerrainManager_TerrainSceneConfiguration_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="169688217" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000265" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1043" name="RuntimeTerrainManager_UpdateTerrainEntityCount_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_UpdateTerrainEntityCount_WorksCorrectly" methodname="RuntimeTerrainManager_UpdateTerrainEntityCount_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="780949460" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000240" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1049" name="RuntimeTerrainManager_UseUnitySceneLoading_CanBeToggled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests.RuntimeTerrainManager_UseUnitySceneLoading_CanBeToggled" methodname="RuntimeTerrainManager_UseUnitySceneLoading_CanBeToggled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.RuntimeTerrainManagerTests" runstate="Runnable" seed="1327221866" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:31Z" duration="0.000192" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1056" name="TerrainGenerationAuthoringTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2025-07-26 19:12:31Z" end-time="2025-07-26 19:12:32Z" duration="0.781563" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <output><![CDATA[RuntimeEntityLoaderSystem: Processing scene loading requests for runtime build...
+Processing scene loading request for: TerrainGenerationScene
+Scene loading request processed for: TerrainGenerationScene
+Processing scene loading request for: TerrainGenerationScene
+Scene loading request processed for: TerrainGenerationScene
+Processing scene loading request for: TerrainGenerationScene
+Scene loading request processed for: TerrainGenerationScene
+Processing scene loading request for: DefaultTerrainScene
+Scene loading request processed for: DefaultTerrainScene
+Processing scene loading request for: TerrainGenerationScene
+Scene loading request processed for: TerrainGenerationScene
+Processing scene loading request for: TerrainGenerationScene
+Scene loading request processed for: TerrainGenerationScene
+Processing scene loading request for: TerrainGenerationScene
+Scene loading request processed for: TerrainGenerationScene
+RuntimeEntityLoaderSystem: Scene loading request processing complete.
+]]></output>
+                <test-case id="1065" name="TerrainGenerationAuthoring_BlobAssetMemoryManagement_NoLeaks" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_BlobAssetMemoryManagement_NoLeaks" methodname="TerrainGenerationAuthoring_BlobAssetMemoryManagement_NoLeaks" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1030998515" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.004514" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <reason>
+                    <message><![CDATA[Memory management test completed successfully]]></message>
+                  </reason>
+                </test-case>
+                <test-case id="1069" name="TerrainGenerationAuthoring_DataConsistency_AcrossMultipleCalls" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_DataConsistency_AcrossMultipleCalls" methodname="TerrainGenerationAuthoring_DataConsistency_AcrossMultipleCalls" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="2096229687" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.002576" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1066" name="TerrainGenerationAuthoring_DefaultTerraceHeights_AreValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_DefaultTerraceHeights_AreValid" methodname="TerrainGenerationAuthoring_DefaultTerraceHeights_AreValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1261664544" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.002075" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1057" name="TerrainGenerationAuthoring_DefaultValues_AreValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_DefaultValues_AreValid" methodname="TerrainGenerationAuthoring_DefaultValues_AreValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="709955677" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.002013" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1067" name="TerrainGenerationAuthoring_ExtremeBounds_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ExtremeBounds_HandledCorrectly" methodname="TerrainGenerationAuthoring_ExtremeBounds_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="312989938" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001757" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1061" name="TerrainGenerationAuthoring_ToTerraceConfigData_EmptyHeights" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerraceConfigData_EmptyHeights" methodname="TerrainGenerationAuthoring_ToTerraceConfigData_EmptyHeights" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="714731218" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001892" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1060" name="TerrainGenerationAuthoring_ToTerraceConfigData_RelativeHeightsConversion" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerraceConfigData_RelativeHeightsConversion" methodname="TerrainGenerationAuthoring_ToTerraceConfigData_RelativeHeightsConversion" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1012065996" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001915" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1062" name="TerrainGenerationAuthoring_ToTerraceConfigData_SingleHeight" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerraceConfigData_SingleHeight" methodname="TerrainGenerationAuthoring_ToTerraceConfigData_SingleHeight" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1369849821" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001515" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1058" name="TerrainGenerationAuthoring_ToTerrainGenerationData_PlanarConfiguration" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerrainGenerationData_PlanarConfiguration" methodname="TerrainGenerationAuthoring_ToTerrainGenerationData_PlanarConfiguration" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="19128557" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.002325" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1059" name="TerrainGenerationAuthoring_ToTerrainGenerationData_SphericalConfiguration" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerrainGenerationData_SphericalConfiguration" methodname="TerrainGenerationAuthoring_ToTerrainGenerationData_SphericalConfiguration" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="405991260" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.002575" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1064" name="TerrainGenerationAuthoring_ToTerrainGenerationRequest_AsyncDisabled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerrainGenerationRequest_AsyncDisabled" methodname="TerrainGenerationAuthoring_ToTerrainGenerationRequest_AsyncDisabled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1714525005" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001699" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1063" name="TerrainGenerationAuthoring_ToTerrainGenerationRequest_AsyncEnabled" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ToTerrainGenerationRequest_AsyncEnabled" methodname="TerrainGenerationAuthoring_ToTerrainGenerationRequest_AsyncEnabled" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1008625837" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001393" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1068" name="TerrainGenerationAuthoring_ZeroHeightDelta_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests.TerrainGenerationAuthoring_ZeroHeightDelta_HandledCorrectly" methodname="TerrainGenerationAuthoring_ZeroHeightDelta_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationAuthoringTests" runstate="Runnable" seed="1920190281" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:32Z" duration="0.001812" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1070" name="TerrainGenerationComponentTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2025-07-26 19:12:32Z" end-time="2025-07-26 19:12:33Z" duration="0.686217" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <output><![CDATA[RuntimeDebugConsole: Using NewInputSystem for input handling.
+Runtime Debug Console initialized. Press BackQuote to toggle visibility.
+Console will automatically find and integrate with RuntimeTerrainManager if present.
+RuntimeDebugConsole: Input System actions initialized successfully.
+SetConsoleVisibility called with visible: False
+Console canvas active set to: False
+RuntimeTerrainManager: Waiting 0.5s before initialization...
+]]></output>
+                <test-case id="1084" name="ComponentArchetypeChanges_HandleGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.ComponentArchetypeChanges_HandleGracefully" methodname="ComponentArchetypeChanges_HandleGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="208951458" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002120" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1081" name="ComponentCombinations_AllTerrainComponents_WorkTogether" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.ComponentCombinations_AllTerrainComponents_WorkTogether" methodname="ComponentCombinations_AllTerrainComponents_WorkTogether" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1010606513" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002856" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1082" name="ComponentQuery_FiltersByComponents_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.ComponentQuery_FiltersByComponents_WorksCorrectly" methodname="ComponentQuery_FiltersByComponents_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1946921831" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002434" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1083" name="ComponentRemoval_CleansUpCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.ComponentRemoval_CleansUpCorrectly" methodname="ComponentRemoval_CleansUpCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="652822003" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002126" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1080" name="GeneratedTerrainMeshTag_TagFunctionality_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.GeneratedTerrainMeshTag_TagFunctionality_WorksCorrectly" methodname="GeneratedTerrainMeshTag_TagFunctionality_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="2021334247" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.001498" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1078" name="MeshDataComponent_BlobAssetManagement_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.MeshDataComponent_BlobAssetManagement_WorksCorrectly" methodname="MeshDataComponent_BlobAssetManagement_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1109768380" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.003674" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1079" name="MeshGameObjectReference_ComponentFunctionality_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.MeshGameObjectReference_ComponentFunctionality_WorksCorrectly" methodname="MeshGameObjectReference_ComponentFunctionality_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1697971709" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002821" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1073" name="TerraceConfigData_BlobAssetLifecycle_ManagedCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerraceConfigData_BlobAssetLifecycle_ManagedCorrectly" methodname="TerraceConfigData_BlobAssetLifecycle_ManagedCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="140873107" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002303" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1074" name="TerraceConfigData_BlobAssetReplacement_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerraceConfigData_BlobAssetReplacement_HandledCorrectly" methodname="TerraceConfigData_BlobAssetReplacement_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1260398458" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.002390" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1071" name="TerrainGenerationData_ComponentAddition_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerrainGenerationData_ComponentAddition_WorksCorrectly" methodname="TerrainGenerationData_ComponentAddition_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="949645102" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.001836" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1072" name="TerrainGenerationData_ComponentModification_UpdatesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerrainGenerationData_ComponentModification_UpdatesCorrectly" methodname="TerrainGenerationData_ComponentModification_UpdatesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="2023385400" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.001615" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1077" name="TerrainGenerationRequest_ComponentBehavior_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerrainGenerationRequest_ComponentBehavior_WorksCorrectly" methodname="TerrainGenerationRequest_ComponentBehavior_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1280535451" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.001844" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1076" name="TerrainGenerationState_ErrorHandling_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerrainGenerationState_ErrorHandling_WorksCorrectly" methodname="TerrainGenerationState_ErrorHandling_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="408188645" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.001623" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1075" name="TerrainGenerationState_StateTransitions_WorkCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests.TerrainGenerationState_StateTransitions_WorkCorrectly" methodname="TerrainGenerationState_StateTransitions_WorkCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationComponentTests" runstate="Runnable" seed="1577747586" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:33Z" duration="0.001787" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1085" name="TerrainGenerationDataTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2025-07-26 19:12:33Z" end-time="2025-07-26 19:12:34Z" duration="0.730920" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1098" name="EntityComponentIntegration_AllComponents_CanBeAddedToEntity" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.EntityComponentIntegration_AllComponents_CanBeAddedToEntity" methodname="EntityComponentIntegration_AllComponents_CanBeAddedToEntity" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="284050542" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002548" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1095" name="GeneratedTerrainMeshTag_IsValidComponent" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.GeneratedTerrainMeshTag_IsValidComponent" methodname="GeneratedTerrainMeshTag_IsValidComponent" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="1612565045" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001467" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1097" name="GenerationPhase_EnumValues_AreCorrect" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.GenerationPhase_EnumValues_AreCorrect" methodname="GenerationPhase_EnumValues_AreCorrect" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="852498040" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001653" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1093" name="MeshDataComponent_BlobAssetCreation_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.MeshDataComponent_BlobAssetCreation_WorksCorrectly" methodname="MeshDataComponent_BlobAssetCreation_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="832324129" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002308" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1094" name="MeshGameObjectReference_InstanceID_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.MeshGameObjectReference_InstanceID_IsValid" methodname="MeshGameObjectReference_InstanceID_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="1578756149" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001507" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1089" name="TerraceConfigData_BlobAssetCreation_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerraceConfigData_BlobAssetCreation_WorksCorrectly" methodname="TerraceConfigData_BlobAssetCreation_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="1816409101" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001693" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1086" name="TerrainGenerationData_DefaultValues_AreValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainGenerationData_DefaultValues_AreValid" methodname="TerrainGenerationData_DefaultValues_AreValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="422847273" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001483" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1087" name="TerrainGenerationData_PlanarConfiguration_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainGenerationData_PlanarConfiguration_IsValid" methodname="TerrainGenerationData_PlanarConfiguration_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="533806687" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001768" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1088" name="TerrainGenerationData_SphericalConfiguration_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainGenerationData_SphericalConfiguration_IsValid" methodname="TerrainGenerationData_SphericalConfiguration_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="1836932425" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001486" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1092" name="TerrainGenerationRequest_Configuration_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainGenerationRequest_Configuration_IsValid" methodname="TerrainGenerationRequest_Configuration_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="278877986" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001257" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1090" name="TerrainGenerationState_DefaultValues_AreCorrect" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainGenerationState_DefaultValues_AreCorrect" methodname="TerrainGenerationState_DefaultValues_AreCorrect" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="1330895575" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001466" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1091" name="TerrainGenerationState_PhaseProgression_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainGenerationState_PhaseProgression_WorksCorrectly" methodname="TerrainGenerationState_PhaseProgression_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="2123285094" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001396" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1096" name="TerrainType_EnumValues_AreCorrect" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests.TerrainType_EnumValues_AreCorrect" methodname="TerrainType_EnumValues_AreCorrect" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationDataTests" runstate="Runnable" seed="99068086" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.001146" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1099" name="TerrainGenerationEdgeCaseTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.741191" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1116" name="EdgeCase_DuplicateTerraceHeights_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_DuplicateTerraceHeights_HandledCorrectly" methodname="EdgeCase_DuplicateTerraceHeights_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1103365462" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.003138" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1112" name="EdgeCase_EmptyTerraceHeights_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_EmptyTerraceHeights_HandledCorrectly" methodname="EdgeCase_EmptyTerraceHeights_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1675333942" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002329" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1118" name="EdgeCase_EntityWithoutRequiredComponents_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_EntityWithoutRequiredComponents_HandledGracefully" methodname="EdgeCase_EntityWithoutRequiredComponents_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1283953757" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002166" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1109" name="EdgeCase_ExtremeNoiseParameters_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_ExtremeNoiseParameters_HandledGracefully" methodname="EdgeCase_ExtremeNoiseParameters_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1331662579" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002938" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1107" name="EdgeCase_InvertedHeightRange_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_InvertedHeightRange_HandledGracefully" methodname="EdgeCase_InvertedHeightRange_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1632132708" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.005156" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1111" name="EdgeCase_MaximumDepth_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_MaximumDepth_WorksCorrectly" methodname="EdgeCase_MaximumDepth_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1074570318" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002251" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1101" name="EdgeCase_MaximumSides_Decagon_GeneratesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_MaximumSides_Decagon_GeneratesCorrectly" methodname="EdgeCase_MaximumSides_Decagon_GeneratesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="126216805" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.005545" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1100" name="EdgeCase_MinimumSides_Triangle_GeneratesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_MinimumSides_Triangle_GeneratesCorrectly" methodname="EdgeCase_MinimumSides_Triangle_GeneratesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="318564794" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.003843" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1106" name="EdgeCase_NegativeHeights_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_NegativeHeights_HandledCorrectly" methodname="EdgeCase_NegativeHeights_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="525921909" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002332" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1105" name="EdgeCase_NegativeRadius_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_NegativeRadius_HandledGracefully" methodname="EdgeCase_NegativeRadius_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="2090761457" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002712" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1113" name="EdgeCase_SingleTerraceHeight_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_SingleTerraceHeight_WorksCorrectly" methodname="EdgeCase_SingleTerraceHeight_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1432623389" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002278" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1115" name="EdgeCase_UnsortedTerraceHeights_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_UnsortedTerraceHeights_HandledGracefully" methodname="EdgeCase_UnsortedTerraceHeights_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="593303645" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002341" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1104" name="EdgeCase_VeryLargeRadius_GeneratesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_VeryLargeRadius_GeneratesCorrectly" methodname="EdgeCase_VeryLargeRadius_GeneratesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1133589062" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002403" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1114" name="EdgeCase_VeryLargeTerraceCount_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_VeryLargeTerraceCount_HandledCorrectly" methodname="EdgeCase_VeryLargeTerraceCount_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1427966194" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002467" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1117" name="EdgeCase_VeryLargeTerraceHeights_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_VeryLargeTerraceHeights_HandledCorrectly" methodname="EdgeCase_VeryLargeTerraceHeights_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1797397946" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002281" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1103" name="EdgeCase_VerySmallRadius_GeneratesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_VerySmallRadius_GeneratesCorrectly" methodname="EdgeCase_VerySmallRadius_GeneratesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="680597488" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002242" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1110" name="EdgeCase_ZeroDepth_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_ZeroDepth_HandledGracefully" methodname="EdgeCase_ZeroDepth_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="1197013867" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002081" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1108" name="EdgeCase_ZeroHeightRange_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_ZeroHeightRange_HandledCorrectly" methodname="EdgeCase_ZeroHeightRange_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="476021477" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.002950" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1102" name="EdgeCase_ZeroRadius_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests.EdgeCase_ZeroRadius_HandledGracefully" methodname="EdgeCase_ZeroRadius_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationEdgeCaseTests" runstate="Runnable" seed="319637727" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:34Z" duration="0.003257" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1119" name="TerrainGenerationIntegrationTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2025-07-26 19:12:34Z" end-time="2025-07-26 19:12:39Z" duration="4.835701" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <output><![CDATA[RuntimeTerrainManager: Initializing terrain system for runtime build...
+RuntimeTerrainManager: Using Unity SceneManager for additional scene loading...
+Loading scene: TerrainGeneration
+Using scene name: TerrainGeneration
+Created scene loading request for tracking: TerrainGeneration
+Found 2 existing terrain entities. Skipping default creation.
+RuntimeTerrainManager: Initialization complete in 0.015s
+Terrain entity count updated: 2
+]]></output>
+                <test-case id="1120" name="BasicFixture_CanCreateEntitiesAndSystems" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.BasicFixture_CanCreateEntitiesAndSystems" methodname="BasicFixture_CanCreateEntitiesAndSystems" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="1865447469" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.001932" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1129" name="ComponentQueries_WorkCorrectlyWithManyEntities" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.ComponentQueries_WorkCorrectlyWithManyEntities" methodname="ComponentQueries_WorkCorrectlyWithManyEntities" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="931894252" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.004129" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1127" name="ErrorRecovery_EntityDestructionHandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.ErrorRecovery_EntityDestructionHandledGracefully" methodname="ErrorRecovery_EntityDestructionHandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="118236305" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.003291" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1123" name="JobCompletion_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.JobCompletion_WorksCorrectly" methodname="JobCompletion_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="382117734" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.002155" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1128" name="LargeScaleIntegration_ManyEntitiesProcessCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.LargeScaleIntegration_ManyEntitiesProcessCorrectly" methodname="LargeScaleIntegration_ManyEntitiesProcessCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="1551445943" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.002406" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1122" name="MultipleEntities_CanBeCreatedAndManaged" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.MultipleEntities_CanBeCreatedAndManaged" methodname="MultipleEntities_CanBeCreatedAndManaged" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="2042653051" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.001942" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1125" name="MultiTerrainWorkflow_EntitiesProcessIndependently" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.MultiTerrainWorkflow_EntitiesProcessIndependently" methodname="MultiTerrainWorkflow_EntitiesProcessIndependently" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="284679897" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.002547" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1130" name="SystemStress_HandlesManyUpdates" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.SystemStress_HandlesManyUpdates" methodname="SystemStress_HandlesManyUpdates" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="119716454" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.002815" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1124" name="TerrainEntityLifecycle_CompleteWorkflow" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.TerrainEntityLifecycle_CompleteWorkflow" methodname="TerrainEntityLifecycle_CompleteWorkflow" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="1510141125" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:35Z" duration="0.002706" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1126" name="TerrainGeneration_FrameByFrameProcessing" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.TerrainGeneration_FrameByFrameProcessing" methodname="TerrainGeneration_FrameByFrameProcessing" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="19748720" result="Passed" start-time="2025-07-26 19:12:35Z" end-time="2025-07-26 19:12:39Z" duration="4.132728" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[Scene loading completed: TerrainGeneration
+Terrain entity count updated: 2
+]]></output>
+                </test-case>
+                <test-case id="1121" name="TerrainGenerationWorkflow_CanCompleteBasicSteps" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests.TerrainGenerationWorkflow_CanCompleteBasicSteps" methodname="TerrainGenerationWorkflow_CanCompleteBasicSteps" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationIntegrationTests" runstate="Runnable" seed="1384973083" result="Passed" start-time="2025-07-26 19:12:39Z" end-time="2025-07-26 19:12:39Z" duration="0.001848" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1131" name="TerrainGenerationPerformanceTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2025-07-26 19:12:39Z" end-time="2025-07-26 19:14:04Z" duration="84.473398" total="12" passed="10" failed="2" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1142" name="EdgeCase_EmptyTerraceHeights_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_EmptyTerraceHeights_HandledCorrectly" methodname="EdgeCase_EmptyTerraceHeights_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="382643642" result="Passed" start-time="2025-07-26 19:12:43Z" end-time="2025-07-26 19:12:44Z" duration="1.184447" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation seed was zero, using fallback seed: 1
+Terrain generation completed for entity Entity(122:5). Created mesh entity Entity(123:5) with GameObject 'GeneratedTerrain_122' containing 6 vertices and 4 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1141" name="EdgeCase_ExtremeNoise_Parameters_WorkCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_ExtremeNoise_Parameters_WorkCorrectly" methodname="EdgeCase_ExtremeNoise_Parameters_WorkCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="1131649665" result="Passed" start-time="2025-07-26 19:12:44Z" end-time="2025-07-26 19:12:45Z" duration="1.153984" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation seed was zero, using fallback seed: 1
+Terrain generation completed for entity Entity(122:7). Created mesh entity Entity(123:7) with GameObject 'GeneratedTerrain_122' containing 6 vertices and 4 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1138" name="EdgeCase_MaximumSides_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_MaximumSides_WorksCorrectly" methodname="EdgeCase_MaximumSides_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="1592729957" result="Failed" start-time="2025-07-26 19:12:45Z" end-time="2025-07-26 19:12:47Z" duration="1.178147" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Entity should have MeshDataComponent after complete workflow
+  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_MaximumSides_WorksCorrectly () [0x000fc] in D:\Tiny Walnut Games\TTG\Assets\TinyWalnutGames.TTG\Tests\TerrainGenerationPerformanceTests.cs:242
+]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation seed was zero, using fallback seed: 1
+Terrain generation completed for entity Entity(122:9). Created mesh entity Entity(123:9) with GameObject 'GeneratedTerrain_122' containing 10 vertices and 8 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1137" name="EdgeCase_MinimumSides_WorksCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_MinimumSides_WorksCorrectly" methodname="EdgeCase_MinimumSides_WorksCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="1829276947" result="Failed" start-time="2025-07-26 19:12:47Z" end-time="2025-07-26 19:12:48Z" duration="1.153011" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Entity should have MeshDataComponent after complete workflow
+  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_MinimumSides_WorksCorrectly () [0x000fb] in D:\Tiny Walnut Games\TTG\Assets\TinyWalnutGames.TTG\Tests\TerrainGenerationPerformanceTests.cs:203
+]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation seed was zero, using fallback seed: 1
+Terrain generation completed for entity Entity(122:11). Created mesh entity Entity(123:11) with GameObject 'GeneratedTerrain_122' containing 3 vertices and 1 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1140" name="EdgeCase_NegativeHeight_HandledCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_NegativeHeight_HandledCorrectly" methodname="EdgeCase_NegativeHeight_HandledCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="383491851" result="Passed" start-time="2025-07-26 19:12:48Z" end-time="2025-07-26 19:12:49Z" duration="1.172303" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation seed was zero, using fallback seed: 1
+Terrain generation completed for entity Entity(122:13). Created mesh entity Entity(123:13) with GameObject 'GeneratedTerrain_122' containing 162 vertices and 320 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1139" name="EdgeCase_ZeroRadius_HandledGracefully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.EdgeCase_ZeroRadius_HandledGracefully" methodname="EdgeCase_ZeroRadius_HandledGracefully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="276828646" result="Passed" start-time="2025-07-26 19:12:49Z" end-time="2025-07-26 19:12:50Z" duration="1.157518" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation seed was zero, using fallback seed: 1
+Terrain generation completed for entity Entity(122:15). Created mesh entity Entity(123:15) with GameObject 'GeneratedTerrain_122' containing 6 vertices and 4 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1136" name="Performance_LargeTerrainGeneration_CompletesSuccessfully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.Performance_LargeTerrainGeneration_CompletesSuccessfully" methodname="Performance_LargeTerrainGeneration_CompletesSuccessfully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="466984159" result="Passed" start-time="2025-07-26 19:12:50Z" end-time="2025-07-26 19:12:58Z" duration="8.074627" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(122:17). Created mesh entity Entity(123:17) with GameObject 'GeneratedTerrain_122' containing 6976 vertices and 12056 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1135" name="Performance_MemoryAllocation_WithinReasonableLimits" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.Performance_MemoryAllocation_WithinReasonableLimits" methodname="Performance_MemoryAllocation_WithinReasonableLimits" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="192422293" result="Passed" start-time="2025-07-26 19:12:58Z" end-time="2025-07-26 19:13:11Z" duration="12.941808" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(122:19). Created mesh entity Entity(142:5) with GameObject 'GeneratedTerrain_122' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(123:19). Created mesh entity Entity(143:5) with GameObject 'GeneratedTerrain_123' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(124:5). Created mesh entity Entity(144:5) with GameObject 'GeneratedTerrain_124' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(125:5). Created mesh entity Entity(145:3) with GameObject 'GeneratedTerrain_125' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(126:5). Created mesh entity Entity(146:3) with GameObject 'GeneratedTerrain_126' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(127:5). Created mesh entity Entity(147:3) with GameObject 'GeneratedTerrain_127' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(128:5). Created mesh entity Entity(148:3) with GameObject 'GeneratedTerrain_128' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(129:5). Created mesh entity Entity(149:3) with GameObject 'GeneratedTerrain_129' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(130:5). Created mesh entity Entity(150:3) with GameObject 'GeneratedTerrain_130' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(131:5). Created mesh entity Entity(151:3) with GameObject 'GeneratedTerrain_131' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(132:5). Created mesh entity Entity(152:3) with GameObject 'GeneratedTerrain_132' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(133:5). Created mesh entity Entity(153:3) with GameObject 'GeneratedTerrain_133' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(134:5). Created mesh entity Entity(154:3) with GameObject 'GeneratedTerrain_134' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(135:5). Created mesh entity Entity(155:3) with GameObject 'GeneratedTerrain_135' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(136:5). Created mesh entity Entity(156:3) with GameObject 'GeneratedTerrain_136' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(137:5). Created mesh entity Entity(157:3) with GameObject 'GeneratedTerrain_137' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(138:5). Created mesh entity Entity(158:3) with GameObject 'GeneratedTerrain_138' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(139:5). Created mesh entity Entity(159:3) with GameObject 'GeneratedTerrain_139' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(140:5). Created mesh entity Entity(160:3) with GameObject 'GeneratedTerrain_140' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(141:5). Created mesh entity Entity(161:3) with GameObject 'GeneratedTerrain_141' containing 45 vertices and 64 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1134" name="Performance_MultipleTerrainsSimultaneous_ScalesLinearlyish" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.Performance_MultipleTerrainsSimultaneous_ScalesLinearlyish" methodname="Performance_MultipleTerrainsSimultaneous_ScalesLinearlyish" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="576771422" result="Passed" start-time="2025-07-26 19:13:11Z" end-time="2025-07-26 19:13:18Z" duration="6.522746" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(122:21). Created mesh entity Entity(132:7) with GameObject 'GeneratedTerrain_122' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(123:21). Created mesh entity Entity(133:7) with GameObject 'GeneratedTerrain_123' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(124:7). Created mesh entity Entity(134:7) with GameObject 'GeneratedTerrain_124' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(125:7). Created mesh entity Entity(135:7) with GameObject 'GeneratedTerrain_125' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(126:7). Created mesh entity Entity(136:7) with GameObject 'GeneratedTerrain_126' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(127:7). Created mesh entity Entity(137:7) with GameObject 'GeneratedTerrain_127' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(128:7). Created mesh entity Entity(138:7) with GameObject 'GeneratedTerrain_128' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(129:7). Created mesh entity Entity(139:7) with GameObject 'GeneratedTerrain_129' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(130:7). Created mesh entity Entity(140:7) with GameObject 'GeneratedTerrain_130' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(131:7). Created mesh entity Entity(141:7) with GameObject 'GeneratedTerrain_131' containing 303 vertices and 520 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1132" name="Performance_SinglePlanarTerrain_CompletesInReasonableTime" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.Performance_SinglePlanarTerrain_CompletesInReasonableTime" methodname="Performance_SinglePlanarTerrain_CompletesInReasonableTime" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="2019143501" result="Passed" start-time="2025-07-26 19:13:18Z" end-time="2025-07-26 19:13:19Z" duration="1.154236" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(122:23). Created mesh entity Entity(123:23) with GameObject 'GeneratedTerrain_122' containing 45 vertices and 64 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1133" name="Performance_SingleSphericalTerrain_CompletesInReasonableTime" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.Performance_SingleSphericalTerrain_CompletesInReasonableTime" methodname="Performance_SingleSphericalTerrain_CompletesInReasonableTime" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="888664975" result="Passed" start-time="2025-07-26 19:13:19Z" end-time="2025-07-26 19:13:20Z" duration="1.191394" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(122:25). Created mesh entity Entity(123:25) with GameObject 'GeneratedTerrain_122' containing 303 vertices and 520 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1143" name="StressTest_ManyTerrainsOverTime_StablePerformance" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests.StressTest_ManyTerrainsOverTime_StablePerformance" methodname="StressTest_ManyTerrainsOverTime_StablePerformance" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationPerformanceTests" runstate="Runnable" seed="1939581858" result="Passed" start-time="2025-07-26 19:13:20Z" end-time="2025-07-26 19:14:04Z" duration="43.686639" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(83:21). Created mesh entity Entity(122:27) with GameObject 'GeneratedTerrain_83' containing 342 vertices and 461 triangles.
+Terrain generation completed for entity Entity(94:3). Created mesh entity Entity(123:27) with GameObject 'GeneratedTerrain_94' containing 8089 vertices and 12144 triangles.
+Terrain generation completed for entity Entity(124:9). Created mesh entity Entity(129:9) with GameObject 'GeneratedTerrain_124' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(125:9). Created mesh entity Entity(130:9) with GameObject 'GeneratedTerrain_125' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(126:9). Created mesh entity Entity(131:9) with GameObject 'GeneratedTerrain_126' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(127:9). Created mesh entity Entity(132:9) with GameObject 'GeneratedTerrain_127' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(128:9). Created mesh entity Entity(133:9) with GameObject 'GeneratedTerrain_128' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(134:9). Created mesh entity Entity(139:9) with GameObject 'GeneratedTerrain_134' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(135:9). Created mesh entity Entity(140:9) with GameObject 'GeneratedTerrain_135' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(136:9). Created mesh entity Entity(141:9) with GameObject 'GeneratedTerrain_136' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(137:9). Created mesh entity Entity(142:7) with GameObject 'GeneratedTerrain_137' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(138:9). Created mesh entity Entity(143:7) with GameObject 'GeneratedTerrain_138' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(144:7). Created mesh entity Entity(149:5) with GameObject 'GeneratedTerrain_144' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(145:5). Created mesh entity Entity(150:5) with GameObject 'GeneratedTerrain_145' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(146:5). Created mesh entity Entity(151:5) with GameObject 'GeneratedTerrain_146' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(147:5). Created mesh entity Entity(152:5) with GameObject 'GeneratedTerrain_147' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(148:5). Created mesh entity Entity(153:5) with GameObject 'GeneratedTerrain_148' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(154:5). Created mesh entity Entity(159:5) with GameObject 'GeneratedTerrain_154' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(155:5). Created mesh entity Entity(160:5) with GameObject 'GeneratedTerrain_155' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(156:5). Created mesh entity Entity(161:5) with GameObject 'GeneratedTerrain_156' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(157:5). Created mesh entity Entity(162:3) with GameObject 'GeneratedTerrain_157' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(158:5). Created mesh entity Entity(163:3) with GameObject 'GeneratedTerrain_158' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(164:3). Created mesh entity Entity(169:3) with GameObject 'GeneratedTerrain_164' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(165:3). Created mesh entity Entity(170:3) with GameObject 'GeneratedTerrain_165' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(166:3). Created mesh entity Entity(171:3) with GameObject 'GeneratedTerrain_166' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(167:3). Created mesh entity Entity(172:3) with GameObject 'GeneratedTerrain_167' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(168:3). Created mesh entity Entity(173:3) with GameObject 'GeneratedTerrain_168' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(174:3). Created mesh entity Entity(179:3) with GameObject 'GeneratedTerrain_174' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(175:3). Created mesh entity Entity(180:3) with GameObject 'GeneratedTerrain_175' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(176:3). Created mesh entity Entity(181:3) with GameObject 'GeneratedTerrain_176' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(177:3). Created mesh entity Entity(182:3) with GameObject 'GeneratedTerrain_177' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(178:3). Created mesh entity Entity(183:3) with GameObject 'GeneratedTerrain_178' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(184:3). Created mesh entity Entity(189:3) with GameObject 'GeneratedTerrain_184' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(185:3). Created mesh entity Entity(190:3) with GameObject 'GeneratedTerrain_185' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(186:3). Created mesh entity Entity(191:3) with GameObject 'GeneratedTerrain_186' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(187:3). Created mesh entity Entity(192:3) with GameObject 'GeneratedTerrain_187' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(188:3). Created mesh entity Entity(193:3) with GameObject 'GeneratedTerrain_188' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(194:3). Created mesh entity Entity(199:1) with GameObject 'GeneratedTerrain_194' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(195:1). Created mesh entity Entity(200:1) with GameObject 'GeneratedTerrain_195' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(196:1). Created mesh entity Entity(201:1) with GameObject 'GeneratedTerrain_196' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(197:1). Created mesh entity Entity(202:1) with GameObject 'GeneratedTerrain_197' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(198:1). Created mesh entity Entity(203:1) with GameObject 'GeneratedTerrain_198' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(204:1). Created mesh entity Entity(209:1) with GameObject 'GeneratedTerrain_204' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(205:1). Created mesh entity Entity(210:1) with GameObject 'GeneratedTerrain_205' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(206:1). Created mesh entity Entity(211:1) with GameObject 'GeneratedTerrain_206' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(207:1). Created mesh entity Entity(212:1) with GameObject 'GeneratedTerrain_207' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(208:1). Created mesh entity Entity(213:1) with GameObject 'GeneratedTerrain_208' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(214:1). Created mesh entity Entity(219:1) with GameObject 'GeneratedTerrain_214' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(215:1). Created mesh entity Entity(220:1) with GameObject 'GeneratedTerrain_215' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(216:1). Created mesh entity Entity(221:1) with GameObject 'GeneratedTerrain_216' containing 45 vertices and 64 triangles.
+Terrain generation completed for entity Entity(217:1). Created mesh entity Entity(222:1) with GameObject 'GeneratedTerrain_217' containing 303 vertices and 520 triangles.
+Terrain generation completed for entity Entity(218:1). Created mesh entity Entity(223:1) with GameObject 'GeneratedTerrain_218' containing 45 vertices and 64 triangles.
+]]></output>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1144" name="TerrainGenerationSystemTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.666651" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1154" name="TerrainGenerationSystem_AlreadyHasMeshData_NoReprocessing" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_AlreadyHasMeshData_NoReprocessing" methodname="TerrainGenerationSystem_AlreadyHasMeshData_NoReprocessing" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1487046411" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.005454" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1150" name="TerrainGenerationSystem_CompleteWorkflow_ProgressesThroughAllPhases" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_CompleteWorkflow_ProgressesThroughAllPhases" methodname="TerrainGenerationSystem_CompleteWorkflow_ProgressesThroughAllPhases" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1439689744" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.005345" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1155" name="TerrainGenerationSystem_DifferentSides_GeneratesDifferentMeshes" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_DifferentSides_GeneratesDifferentMeshes" methodname="TerrainGenerationSystem_DifferentSides_GeneratesDifferentMeshes" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="462204417" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.003734" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1151" name="TerrainGenerationSystem_MultipleEntities_ProcessedIndependently" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_MultipleEntities_ProcessedIndependently" methodname="TerrainGenerationSystem_MultipleEntities_ProcessedIndependently" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1839138542" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.004526" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1145" name="TerrainGenerationSystem_NewRequest_CreatesGenerationState" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_NewRequest_CreatesGenerationState" methodname="TerrainGenerationSystem_NewRequest_CreatesGenerationState" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1414168857" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.002655" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1152" name="TerrainGenerationSystem_NoRequestComponent_NoProcessing" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_NoRequestComponent_NoProcessing" methodname="TerrainGenerationSystem_NoRequestComponent_NoProcessing" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="634118557" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.002635" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1148" name="TerrainGenerationSystem_PlanarMeshGeometry_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_PlanarMeshGeometry_IsValid" methodname="TerrainGenerationSystem_PlanarMeshGeometry_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1584979653" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.002775" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1146" name="TerrainGenerationSystem_PlanarShapeGeneration_CreatesMeshData" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_PlanarShapeGeneration_CreatesMeshData" methodname="TerrainGenerationSystem_PlanarShapeGeneration_CreatesMeshData" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1097579891" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.002389" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1149" name="TerrainGenerationSystem_SphericalMeshGeometry_IsValid" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_SphericalMeshGeometry_IsValid" methodname="TerrainGenerationSystem_SphericalMeshGeometry_IsValid" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1538733831" result="Failed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.003397" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_SphericalMeshGeometry_IsValid () [0x000d8] in D:\Tiny Walnut Games\TTG\Assets\TinyWalnutGames.TTG\Tests\TerrainGenerationSystemTests.cs:160
+]]></stack-trace>
+                  </failure>
+                </test-case>
+                <test-case id="1147" name="TerrainGenerationSystem_SphericalShapeGeneration_CreatesMeshData" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_SphericalShapeGeneration_CreatesMeshData" methodname="TerrainGenerationSystem_SphericalShapeGeneration_CreatesMeshData" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="1793397292" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.003334" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1153" name="TerrainGenerationSystem_WrongPhase_NoProcessing" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests.TerrainGenerationSystem_WrongPhase_NoProcessing" methodname="TerrainGenerationSystem_WrongPhase_NoProcessing" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationSystemTests" runstate="Runnable" seed="347011712" result="Passed" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:04Z" duration="0.002659" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1156" name="TerrainGenerationWorkflowTests" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2025-07-26 19:14:04Z" end-time="2025-07-26 19:14:20Z" duration="15.753551" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1160" name="MultipleTerrainWorkflow_DifferentTypes_ProcessIndependently" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.MultipleTerrainWorkflow_DifferentTypes_ProcessIndependently" methodname="MultipleTerrainWorkflow_DifferentTypes_ProcessIndependently" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="1476439347" result="Passed" start-time="2025-07-26 19:14:05Z" end-time="2025-07-26 19:14:07Z" duration="2.420546" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:15). Created mesh entity Entity(127:11) with GameObject 'GeneratedTerrain_124' containing 25 vertices and 32 triangles.
+Terrain generation completed for entity Entity(125:13). Created mesh entity Entity(128:11) with GameObject 'GeneratedTerrain_125' containing 313 vertices and 536 triangles.
+Terrain generation completed for entity Entity(126:11). Created mesh entity Entity(129:11) with GameObject 'GeneratedTerrain_126' containing 65 vertices and 96 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1157" name="PlanarTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.PlanarTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh" methodname="PlanarTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="306609919" result="Failed" start-time="2025-07-26 19:14:07Z" end-time="2025-07-26 19:14:08Z" duration="1.151754" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Entity should have MeshDataComponent after complete workflow
+  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.PlanarTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh () [0x00146] in D:\Tiny Walnut Games\TTG\Assets\TinyWalnutGames.TTG\Tests\TerrainGenerationWorkflowTests.cs:65
+]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:17). Created mesh entity Entity(125:15) with GameObject 'GeneratedTerrain_124' containing 15 vertices and 16 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1159" name="PlanarTerrainWorkflow_FrameByFrame_ProgressesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.PlanarTerrainWorkflow_FrameByFrame_ProgressesCorrectly" methodname="PlanarTerrainWorkflow_FrameByFrame_ProgressesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="1578124229" result="Passed" start-time="2025-07-26 19:14:08Z" end-time="2025-07-26 19:14:15Z" duration="6.354372" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:19). Created mesh entity Entity(125:17) with GameObject 'GeneratedTerrain_124' containing 45 vertices and 64 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1158" name="SphericalTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.SphericalTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh" methodname="SphericalTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="1143795258" result="Failed" start-time="2025-07-26 19:14:15Z" end-time="2025-07-26 19:14:16Z" duration="1.240531" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Entity should have MeshDataComponent after complete workflow
+  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.SphericalTerrainWorkflow_CompleteEndToEnd_CreatesValidMesh () [0x00132] in D:\Tiny Walnut Games\TTG\Assets\TinyWalnutGames.TTG\Tests\TerrainGenerationWorkflowTests.cs:110
+]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:21). Created mesh entity Entity(125:19) with GameObject 'GeneratedTerrain_124' containing 95 vertices and 154 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1163" name="TerrainWorkflow_RepeatedExecution_ProducesConsistentResults" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.TerrainWorkflow_RepeatedExecution_ProducesConsistentResults" methodname="TerrainWorkflow_RepeatedExecution_ProducesConsistentResults" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="1516858964" result="Failed" start-time="2025-07-26 19:14:16Z" end-time="2025-07-26 19:14:17Z" duration="1.160970" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  First entity should have MeshDataComponent after workflow
+  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[at TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.TerrainWorkflow_RepeatedExecution_ProducesConsistentResults () [0x00018] in D:\Tiny Walnut Games\TTG\Assets\TinyWalnutGames.TTG\Tests\TerrainGenerationWorkflowTests.cs:332
+]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:23). Created mesh entity Entity(125:21) with GameObject 'GeneratedTerrain_124' containing 45 vertices and 64 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1161" name="TerrainWorkflow_WithCustomTerraces_AppliesCorrectly" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.TerrainWorkflow_WithCustomTerraces_AppliesCorrectly" methodname="TerrainWorkflow_WithCustomTerraces_AppliesCorrectly" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="1892398269" result="Passed" start-time="2025-07-26 19:14:17Z" end-time="2025-07-26 19:14:18Z" duration="1.170616" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:25). Created mesh entity Entity(125:23) with GameObject 'GeneratedTerrain_124' containing 71 vertices and 100 triangles.
+]]></output>
+                </test-case>
+                <test-case id="1162" name="TerrainWorkflow_WithHighDetail_CompletesSuccessfully" fullname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests.TerrainWorkflow_WithHighDetail_CompletesSuccessfully" methodname="TerrainWorkflow_WithHighDetail_CompletesSuccessfully" classname="TinyWalnutGames.TTG.TerrainGeneration.Tests.TerrainGenerationWorkflowTests" runstate="Runnable" seed="251381010" result="Passed" start-time="2025-07-26 19:14:18Z" end-time="2025-07-26 19:14:20Z" duration="1.625059" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[MeshCreationSystem: Created URP Lit default material for terrain rendering.
+Terrain generation completed for entity Entity(124:27). Created mesh entity Entity(125:25) with GameObject 'GeneratedTerrain_124' containing 1835 vertices and 3079 triangles.
+Saving results to: C:/Users/Jerry/AppData/LocalLow/Tiny Walnut Games/TTG\TestResults.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

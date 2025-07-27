@@ -73,3 +73,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Exclude entire Lazy Squirrel Labs reference implementation
+# This is the original implementation used for reference during development
+# but should not be included in the TTG repository
+/[Aa]ssets/Lazy Squirrel Labs/
+Assets/Lazy Squirrel Labs/
+*.data
+Assets/TinyWalnutGames.TTG/Samples/Scenes/TestScene/profile data 7-25-25.data.meta
