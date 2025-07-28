@@ -17,8 +17,8 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
     [UpdateInGroup(typeof(InitializationSystemGroup))]
     public partial class RuntimeEntityLoaderSystem : SystemBase
     {
-        private bool hasLoadedInitialScenes = false;
         private EntityQuery sceneLoadingQuery;
+        private EntityQuery processedSceneQuery;
         
         protected override void OnCreate()
         {
@@ -27,25 +27,28 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             // Create query for scene loading requests
             sceneLoadingQuery = GetEntityQuery(ComponentType.ReadOnly<RuntimeSceneLoadingRequest>());
             
+            // Create query for processed scenes (managed by system, not disposable)
+            processedSceneQuery = GetEntityQuery(ComponentType.ReadOnly<RuntimeSceneLoadingProcessed>());
+            
             // Only run this system when there are scene loading requests
             RequireForUpdate(sceneLoadingQuery);
         }
         
         protected override void OnUpdate()
         {
-            // Only load scenes once at startup
-            if (hasLoadedInitialScenes)
+            // Check if there are pending requests
+            var pendingCount = sceneLoadingQuery.CalculateEntityCount();
+            if (pendingCount == 0)
                 return;
                 
-            hasLoadedInitialScenes = true;
-            
             Debug.Log("RuntimeEntityLoaderSystem: Processing scene loading requests for runtime build...");
             
             var ecb = new EntityCommandBuffer(Allocator.TempJob);
             
-            // Process all scene loading requests
+            // Process all scene loading requests efficiently in batch
             Entities
                 .WithAll<RuntimeSceneLoadingRequest>()
+                .WithName("ProcessSceneLoadingRequests")
                 .ForEach((Entity entity, in RuntimeSceneLoadingRequest request) =>
                 {
                     Debug.Log($"Processing scene loading request for: {request.SceneName}");
@@ -57,8 +60,11 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                     // Mark this request as processed by removing the component
                     ecb.RemoveComponent<RuntimeSceneLoadingRequest>(entity);
                     
-                    // Add a tag to indicate processing is complete
-                    ecb.AddComponent<RuntimeSceneLoadingProcessed>(entity);
+                    // Add a tag to indicate processing is complete with timestamp
+                    ecb.AddComponent(entity, new RuntimeSceneLoadingProcessed
+                    {
+                        ProcessedTime = (float)SystemAPI.Time.ElapsedTime
+                    });
                     
                     Debug.Log($"Scene loading request processed for: {request.SceneName}");
                     
@@ -81,11 +87,12 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
         
         /// <summary>
         /// Get count of processed scene loading requests.
+        /// FIXED: Use system-managed query instead of creating disposable query.
         /// </summary>
         public int GetProcessedSceneCount()
         {
-            using var processedQuery = GetEntityQuery(ComponentType.ReadOnly<RuntimeSceneLoadingProcessed>());
-            return processedQuery.CalculateEntityCount();
+            // Use the system-managed query instead of creating a disposable one
+            return processedSceneQuery.CalculateEntityCount();
         }
     }
     

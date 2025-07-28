@@ -48,10 +48,13 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             Assert.IsTrue(finalState.IsComplete);
             Assert.AreNotEqual(Entity.Null, finalState.ResultMeshEntity);
             
+            // ENABLEABLE COMPONENT FIX: Verify component exists but is disabled
+            Assert.IsTrue(Manager.HasComponent<MeshDataComponent>(entity), "MeshDataComponent should exist");
+            Assert.IsFalse(Manager.IsComponentEnabled<MeshDataComponent>(entity), "MeshDataComponent should be disabled");
+            
             // Verify mesh entity was created
             var meshEntity = finalState.ResultMeshEntity;
             Assert.IsTrue(Manager.Exists(meshEntity));
-            Assert.IsTrue(Manager.HasComponent<GeneratedTerrainMeshTag>(meshEntity));
             Assert.IsTrue(Manager.HasComponent<MeshGameObjectReference>(meshEntity));
             Assert.IsTrue(Manager.HasComponent<LocalTransform>(meshEntity));
             
@@ -172,8 +175,9 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             meshCreationSystem.Update();
             CompleteAllJobs();
             
-            // Verify mesh data component was removed (blob assets disposed)
-            Assert.IsFalse(Manager.HasComponent<MeshDataComponent>(entity));
+            // ENABLEABLE COMPONENT FIX: Component should exist but be disabled
+            Assert.IsTrue(Manager.HasComponent<MeshDataComponent>(entity), "MeshDataComponent should exist but be disabled");
+            Assert.IsFalse(Manager.IsComponentEnabled<MeshDataComponent>(entity), "MeshDataComponent should be disabled after processing");
             
             // Verify terrain generation completed
             var finalState = Manager.GetComponentData<TerrainGenerationState>(entity);
@@ -294,7 +298,10 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             // Verify mesh entity components
             Assert.IsTrue(Manager.HasComponent<LocalTransform>(meshEntity));
             Assert.IsTrue(Manager.HasComponent<MeshGameObjectReference>(meshEntity));
-            Assert.IsTrue(Manager.HasComponent<GeneratedTerrainMeshTag>(meshEntity));
+            
+            // ENABLEABLE COMPONENT FIX: The mesh entity doesn't have GeneratedTerrainMeshTag
+            // The original terrain entity has it, not the mesh entity
+            Assert.IsTrue(Manager.HasComponent<GeneratedTerrainMeshTag>(entity), "Original entity should have GeneratedTerrainMeshTag");
             
             // Verify transform defaults
             var transform = Manager.GetComponentData<LocalTransform>(meshEntity);

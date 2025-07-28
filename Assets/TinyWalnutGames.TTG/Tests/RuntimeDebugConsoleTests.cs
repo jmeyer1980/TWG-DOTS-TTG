@@ -223,6 +223,13 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             
             // Test error handling - these should not throw exceptions
             // The console handles null/empty messages by converting them to "[Empty log message]"
+            // and logs them as errors, so we need to expect the error logs
+            
+            // Expect the error logs that will be generated
+            LogAssert.Expect(LogType.Error, "[Empty log message]");
+            LogAssert.Expect(LogType.Error, "[Empty log message]");
+            
+            // These should not throw exceptions but will generate expected error logs
             Assert.DoesNotThrow(() => RuntimeDebugConsoleSetup.LogToConsole(null, LogType.Error));
             Assert.DoesNotThrow(() => RuntimeDebugConsoleSetup.LogToConsole("", LogType.Error));
             Assert.DoesNotThrow(() => RuntimeDebugConsoleSetup.LogToConsole("   ", LogType.Log));
