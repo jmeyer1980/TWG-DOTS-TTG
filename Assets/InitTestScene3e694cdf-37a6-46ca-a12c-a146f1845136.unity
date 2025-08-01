@@ -93,8 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000002, guid: 7bb2b6170d889664697f5878702b4b57, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: e9d2aa152debf6749a445a0a7d063aba, type: 2}
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1091279893
+--- !u!1 &2073602718
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,92 +127,72 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1091279896}
-  - component: {fileID: 1091279895}
-  - component: {fileID: 1091279894}
+  - component: {fileID: 2073602720}
+  - component: {fileID: 2073602719}
   m_Layer: 0
-  m_Name: TerrainGeneration
+  m_Name: Code-based tests runner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1091279894
+--- !u!114 &2073602719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091279893}
+  m_GameObject: {fileID: 2073602718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac99ae16cb240814e83a1ba925c5167d, type: 3}
+  m_Script: {fileID: 11500000, guid: 102e512f651ee834f951a2516c1ea3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generateOnUpdate: 0
-  generateInterval: 5
---- !u!114 &1091279895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091279893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 273387ec45c0ca847927073fb192355d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  terrainType: 1
-  minHeight: 300
-  maxHeight: 400
-  depth: 6
-  sides: 6
-  radius: 10
-  seed: 1
-  baseFrequency: 0.256
-  octaves: 3
-  persistence: 0.172
-  lacunarity: 1.97
-  relativeTerraceHeights:
-  - 0.01
-  - 0.071
-  - 0.143
-  - 0.214
-  - 0.286
-  - 0.357
-  - 0.429
-  - 0.5
-  - 0.571
-  - 0.643
-  - 0.714
-  - 0.786
-  - 0.857
-  - 0.929
-  terraceMaterials:
-  - {fileID: 2100000, guid: 9c1a0a41f31814147888e9794ac2fe44, type: 2}
-  - {fileID: 2100000, guid: 2ff4919cd399fec43aaf6d75a85248fb, type: 2}
-  - {fileID: 2100000, guid: ff619d8450199fb42996d7f59a300751, type: 2}
-  - {fileID: 2100000, guid: e0c0658ae8dc21f4cb56ce14fec0c237, type: 2}
-  - {fileID: 2100000, guid: 5db2a09433035e147b6ef3ecdc580e03, type: 2}
-  - {fileID: 2100000, guid: 0cbc664f3b1c5f0489e963be8bce2193, type: 2}
-  - {fileID: 2100000, guid: af85a03bda42c8143a651c7906b2b33d, type: 2}
-  - {fileID: 2100000, guid: c11074bdd8282384888d9274612d786c, type: 2}
-  - {fileID: 2100000, guid: 00d231b512d087f4e923719a60026cfe, type: 2}
-  - {fileID: 2100000, guid: a309561e8f99c8645bb70392cb8d8697, type: 2}
-  - {fileID: 2100000, guid: e55a8031e0d712a42b24583394d69af8, type: 2}
-  - {fileID: 2100000, guid: 76abe4e4693182f42bba231f945274d0, type: 2}
-  - {fileID: 2100000, guid: 2742a7f43581901498aa7fe73611fae8, type: 2}
-  - {fileID: 2100000, guid: b47273356e2ffff4ba0f61ff265d5c76, type: 2}
-  generateOnStart: 1
-  useAsyncGeneration: 1
---- !u!4 &1091279896
+  m_AssembliesWithTests:
+  - TinyWalnutGames.TTG.TerrainGeneration.Tests
+  - Unity.InputSystem.TestFramework
+  - Unity.PerformanceTesting
+  - UnityEngine.TestRunner
+  testStartedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  testFinishedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runStartedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runFinishedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  settings:
+    filters:
+    - testMode: 4
+      assemblyNames: []
+      groupNames: []
+      categoryNames: []
+      testNames: []
+      synchronousOnly: 0
+    sceneBased: 0
+    originalScene: 
+    bootstrapScene: 
+    orderedTestNames: []
+    featureFlags:
+      fileCleanUpCheck: 0
+      requiresSplashScreen: 0
+      strictDomainReload: 0
+      disableNestedEnumeratorBugfix: 0
+    retryCount: 0
+    repeatCount: 0
+    automated: 0
+    randomOrderSeed: 0
+--- !u!4 &2073602720
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091279893}
+  m_GameObject: {fileID: 2073602718}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -225,4 +205,4 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1091279896}
+  - {fileID: 2073602720}

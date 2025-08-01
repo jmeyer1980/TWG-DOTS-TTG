@@ -1207,14 +1207,14 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                     result.AppendLine("❌ No MeshRenderer found!");
                 }
                 
-                // Check if object is within camera view
+                // Check if object is within camera view 
                 var camera = Camera.main;
                 if (camera != null)
                 {
-                    var bounds = go.GetComponent<MeshRenderer>()?.bounds;
-                    if (bounds.HasValue)
+                    if (go.TryGetComponent<MeshRenderer>(out var meshRendererForBounds))
                     {
-                        var visible = GeometryUtility.TestPlanesAABB(GeometryUtility.CalculateFrustumPlanes(camera), bounds.Value);
+                        var bounds = meshRendererForBounds.bounds;
+                        var visible = GeometryUtility.TestPlanesAABB(GeometryUtility.CalculateFrustumPlanes(camera), bounds);
                         result.AppendLine($"Camera Visibility: {(visible ? "✅ IN VIEW" : "❌ OUT OF VIEW")}");
                         result.AppendLine($"Distance to Camera: {Vector3.Distance(camera.transform.position, go.transform.position):F2}");
                     }
@@ -1238,7 +1238,7 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             foreach (var go in terrainObjects)
             {
                 var meshFilter = go.GetComponent<MeshFilter>();
-                if (meshFilter?.mesh == null)
+                if (meshFilter != null ? meshFilter.mesh : null == null)
                 {
                     result.AppendLine($"❌ {go.name}: No mesh");
                     continue;
@@ -1493,16 +1493,17 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                 }
                 
                 // UNT0008 FIX: Avoid null propagation with Unity objects
-                var meshRenderer = go.GetComponent<MeshRenderer>();
-                if (meshRenderer == null)
+                if (go.TryGetComponent<MeshRenderer>(out var meshRenderer))
+                {
+                    if (meshRenderer == null || !meshRenderer.enabled)
+                    {
+                        result.AppendLine("❌ MeshRenderer is disabled");
+                        continue;
+                    }
+                }
+                else
                 {
                     result.AppendLine("❌ No MeshRenderer component");
-                    continue;
-                }
-                
-                if (!meshRenderer.enabled)
-                {
-                    result.AppendLine("❌ MeshRenderer is disabled");
                     continue;
                 }
                 
@@ -1530,7 +1531,12 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                 
                 // Check if object has valid materials
                 var materials = meshRenderer.materials;
-                var validMaterials = materials.Count(m => m != null);
+                int validMaterials = 0;
+                foreach (var m in materials)
+                {
+                    if (m != null)
+                        validMaterials++;
+                }
                 result.AppendLine($"🎨 Valid Materials: {validMaterials}/{materials.Length}");
                 
                 // Calculate overall visibility score
