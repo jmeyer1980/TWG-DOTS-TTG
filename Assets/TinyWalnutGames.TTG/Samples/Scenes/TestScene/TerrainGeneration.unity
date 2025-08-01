@@ -166,7 +166,7 @@ MonoBehaviour:
   terrainType: 1
   minHeight: 300
   maxHeight: 400
-  depth: 6
+  depth: 4
   sides: 6
   radius: 10
   seed: 1
@@ -190,20 +190,20 @@ MonoBehaviour:
   - 0.857
   - 0.929
   terraceMaterials:
-  - {fileID: 2100000, guid: 9c1a0a41f31814147888e9794ac2fe44, type: 2}
-  - {fileID: 2100000, guid: 2ff4919cd399fec43aaf6d75a85248fb, type: 2}
-  - {fileID: 2100000, guid: ff619d8450199fb42996d7f59a300751, type: 2}
-  - {fileID: 2100000, guid: e0c0658ae8dc21f4cb56ce14fec0c237, type: 2}
-  - {fileID: 2100000, guid: 5db2a09433035e147b6ef3ecdc580e03, type: 2}
-  - {fileID: 2100000, guid: 0cbc664f3b1c5f0489e963be8bce2193, type: 2}
-  - {fileID: 2100000, guid: af85a03bda42c8143a651c7906b2b33d, type: 2}
-  - {fileID: 2100000, guid: c11074bdd8282384888d9274612d786c, type: 2}
-  - {fileID: 2100000, guid: 00d231b512d087f4e923719a60026cfe, type: 2}
-  - {fileID: 2100000, guid: a309561e8f99c8645bb70392cb8d8697, type: 2}
-  - {fileID: 2100000, guid: e55a8031e0d712a42b24583394d69af8, type: 2}
-  - {fileID: 2100000, guid: 76abe4e4693182f42bba231f945274d0, type: 2}
-  - {fileID: 2100000, guid: 2742a7f43581901498aa7fe73611fae8, type: 2}
-  - {fileID: 2100000, guid: b47273356e2ffff4ba0f61ff265d5c76, type: 2}
+  - {fileID: 2100000, guid: 826651de5a37a45f49fba0fdbc9e25a8, type: 2}
+  - {fileID: 2100000, guid: e77be347f38a745ad97cd2492f96393d, type: 2}
+  - {fileID: 2100000, guid: 04be9b0617854417dada76ded2c3b347, type: 2}
+  - {fileID: 2100000, guid: 398cc1d0b7d06407cae6ee943989e8de, type: 2}
+  - {fileID: 2100000, guid: 57e7d62d5600c40f1abb054384e6edec, type: 2}
+  - {fileID: 2100000, guid: 4c0c74753380c45cdbef8e4d604bbbd6, type: 2}
+  - {fileID: 2100000, guid: 7bb519dd782db420e9955723caa5babf, type: 2}
+  - {fileID: 2100000, guid: d9a777862ccc54e49aa79ef167271c93, type: 2}
+  - {fileID: 2100000, guid: 91b8332c13a834d23a86dfcb12c0bf1d, type: 2}
+  - {fileID: 2100000, guid: a1fca87a50e3b4343ad911bc74f174f0, type: 2}
+  - {fileID: 2100000, guid: 03770995a648e4b5bbeea12db66b39b2, type: 2}
+  - {fileID: 2100000, guid: aeeda619ec9e1463d8e43ba0449a9599, type: 2}
+  - {fileID: 2100000, guid: ae7bad7a030bd4ebea45955421baaaa1, type: 2}
+  - {fileID: 2100000, guid: fde2bb76868ff4cdeb68fddeb513f96e, type: 2}
   generateOnStart: 1
   useAsyncGeneration: 1
 --- !u!4 &1091279896

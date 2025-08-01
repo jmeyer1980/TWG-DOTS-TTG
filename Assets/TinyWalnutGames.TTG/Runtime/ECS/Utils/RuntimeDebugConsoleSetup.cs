@@ -102,8 +102,8 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
         {
             if (IsConsoleAvailable())
             {
-                // SAFETY: Handle null, empty, or whitespace-only messages gracefully
-                if (string.IsNullOrWhiteSpace(message))
+                // SAFETY: Handle null or empty messages gracefully
+                if (string.IsNullOrEmpty(message))
                 {
                     message = "[Empty log message]";
                 }

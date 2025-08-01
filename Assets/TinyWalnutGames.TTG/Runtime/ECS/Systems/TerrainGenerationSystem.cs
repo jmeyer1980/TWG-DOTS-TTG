@@ -2,8 +2,6 @@ using Unity.Entities;
 using Unity.Collections;
 using Unity.Mathematics;
 using UnityEngine;
-using Unity.Burst;
-using Unity.Jobs;
 
 namespace TinyWalnutGames.TTG.TerrainGeneration
 {
@@ -406,57 +404,6 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             return meshData;
         }
         
-        private struct PlanarSubdivisionJob : IJobParallelFor
-        {
-            [ReadOnly] public NativeArray<float3> vertices;
-            [ReadOnly] public NativeArray<int> indices;
-            [WriteOnly] public NativeArray<float3> outVertices;
-            [WriteOnly] public NativeArray<int> outIndices;
-            public float epsilon;
-
-            public void Execute(int t)
-            {
-                int i0 = indices[t * 3];
-                int i1 = indices[t * 3 + 1];
-                int i2 = indices[t * 3 + 2];
-                float3 v0 = vertices[i0];
-                float3 v1 = vertices[i1];
-                float3 v2 = vertices[i2];
-                float3 v01 = (v0 + v1) * 0.5f;
-                float3 v12 = (v1 + v2) * 0.5f;
-                float3 v20 = (v2 + v0) * 0.5f;
-                int baseIdx = t * 12;
-                // Triangle 1: v0, v01, v20
-                outVertices[baseIdx + 0] = v0;
-                outVertices[baseIdx + 1] = v01;
-                outVertices[baseIdx + 2] = v20;
-                outIndices[baseIdx + 0] = baseIdx + 0;
-                outIndices[baseIdx + 1] = baseIdx + 1;
-                outIndices[baseIdx + 2] = baseIdx + 2;
-                // Triangle 2: v01, v1, v12
-                outVertices[baseIdx + 3] = v01;
-                outVertices[baseIdx + 4] = v1;
-                outVertices[baseIdx + 5] = v12;
-                outIndices[baseIdx + 3] = baseIdx + 3;
-                outIndices[baseIdx + 4] = baseIdx + 4;
-                outIndices[baseIdx + 5] = baseIdx + 5;
-                // Triangle 3: v20, v12, v2
-                outVertices[baseIdx + 6] = v20;
-                outVertices[baseIdx + 7] = v12;
-                outVertices[baseIdx + 8] = v2;
-                outIndices[baseIdx + 6] = baseIdx + 6;
-                outIndices[baseIdx + 7] = baseIdx + 7;
-                outIndices[baseIdx + 8] = baseIdx + 8;
-                // Triangle 4: v01, v12, v20
-                outVertices[baseIdx + 9] = v01;
-                outVertices[baseIdx + 10] = v12;
-                outVertices[baseIdx + 11] = v20;
-                outIndices[baseIdx + 9] = baseIdx + 9;
-                outIndices[baseIdx + 10] = baseIdx + 10;
-                outIndices[baseIdx + 11] = baseIdx + 11;
-            }
-        }
-        
         private static MeshDataComponent ApplyCorrectMeshFragmentation(MeshDataComponent meshData, ushort depth, TerrainType terrainType)
         {
             if (depth <= 1)
@@ -465,8 +412,8 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             ref var originalVertices = ref meshData.Vertices.Value;
             ref var originalIndices = ref meshData.Indices.Value;
             
-            var currentVertices = new NativeArray<float3>(originalVertices.Length, Allocator.TempJob);
-            var currentIndices = new NativeArray<int>(originalIndices.Length, Allocator.TempJob);
+            var currentVertices = new NativeArray<float3>(originalVertices.Length, Allocator.Temp);
+            var currentIndices = new NativeArray<int>(originalIndices.Length, Allocator.Temp);
             
             // Copy original data
             for (int i = 0; i < originalVertices.Length; i++)
@@ -492,33 +439,17 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
                     break;
                 }
                 
-                var newVertices = new NativeArray<float3>(projectedTriangleCount * 3, Allocator.TempJob);
-                var newIndices = new NativeArray<int>(projectedTriangleCount * 3, Allocator.TempJob);
-                if (terrainType == TerrainType.Planar)
-                {
-                    var job = new PlanarSubdivisionJob
-                    {
-                        vertices = currentVertices,
-                        indices = currentIndices,
-                        outVertices = newVertices,
-                        outIndices = newIndices,
-                        epsilon = 0.0001f
-                    };
-                    job.Schedule(currentTriangleCount, 64).Complete();
-                }
-                else
-                {
-                    // Fallback to synchronous for spherical for now
-                    var result = SubdivideSphericalMesh(currentVertices, currentIndices);
-                    for (int i = 0; i < result.vertices.Length; i++)
-                        newVertices[i] = result.vertices[i];
-                    for (int i = 0; i < result.indices.Length; i++)
-                        newIndices[i] = result.indices[i];
-                }
+                var (vertices, indices) = terrainType == TerrainType.Spherical ? 
+                    SubdivideSphericalMesh(currentVertices, currentIndices) :
+                    SubdividePlanarMesh(currentVertices, currentIndices);
+                
+                // Dispose old arrays
                 currentVertices.Dispose();
                 currentIndices.Dispose();
-                currentVertices = newVertices;
-                currentIndices = newIndices;
+                
+                // Use new data
+                currentVertices = vertices;
+                currentIndices = indices;
             }
             
             var fragmentedMeshData = CreateMeshDataComponent(currentVertices, currentIndices);
@@ -678,123 +609,13 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             return (newVertices, newIndices);
         }
         
-        [BurstCompile]
-        private struct NoiseSculptingJob : IJobParallelFor
-        {
-            [ReadOnly] public NativeArray<float3> inputVertices;
-            [ReadOnly] public NativeArray<float3> originalVertices;
-            [ReadOnly] public NativeArray<float3> octaveOffsets;
-            public TerrainType terrainType;
-            public float minHeight;
-            public float maxHeight;
-            public float baseFrequency;
-            public uint octaves;
-            public float persistence;
-            public float lacunarity;
-            public uint validSeed;
-            [WriteOnly] public NativeArray<float3> outputVertices;
-
-            public void Execute(int i)
-            {
-                var vertex = inputVertices[i];
-                float noiseValue = 0f;
-                float amplitude = 1f;
-                float frequency = baseFrequency;
-                float heightDelta = maxHeight - minHeight;
-                if (frequency <= 0f) frequency = 0.01f;
-                if (heightDelta <= 0f) heightDelta = 1f;
-                if (terrainType == TerrainType.Spherical)
-                {
-                    for (uint octave = 0; octave < octaves; octave++)
-                    {
-                        var offset = octaveOffsets[(int)octave];
-                        var sampleX = vertex.x * frequency + offset.x;
-                        var sampleY = vertex.y * frequency + offset.y;
-                        var sampleZ = vertex.z * frequency + offset.z;
-                        float perlinNoise3D = (noise.snoise(new float2(sampleX, sampleY)) + noise.snoise(new float2(sampleX, sampleZ)) + noise.snoise(new float2(sampleY, sampleZ)) + noise.snoise(new float2(sampleY, sampleX)) + noise.snoise(new float2(sampleZ, sampleX)) + noise.snoise(new float2(sampleZ, sampleY))) / 6f;
-                        noiseValue += perlinNoise3D * amplitude;
-                        amplitude *= persistence;
-                        frequency *= lacunarity;
-                    }
-                    float relativeHeight = math.clamp(noiseValue * 0.5f + 0.5f, 0f, 1f);
-                    float finalHeight = math.max(0.01f, minHeight + heightDelta * relativeHeight);
-                    outputVertices[i] = math.normalize(vertex) * finalHeight;
-                }
-                else
-                {
-                    for (uint octave = 0; octave < octaves; octave++)
-                    {
-                        var sampleX = vertex.x * frequency + validSeed;
-                        var sampleZ = vertex.z * frequency + validSeed;
-                        noiseValue += noise.snoise(new float2(sampleX, sampleZ)) * amplitude;
-                        amplitude *= persistence;
-                        frequency *= lacunarity;
-                    }
-                    float heightVariation = noiseValue * heightDelta * 0.3f;
-                    vertex.y += heightVariation;
-                    outputVertices[i] = vertex;
-                }
-            }
-        }
-
-        private static MeshDataComponent ApplyNoiseSculpting(MeshDataComponent meshData, TerrainGenerationData terrainData)
-        {
-            ref var originalVerticesBlob = ref meshData.Vertices.Value;
-            ref var originalIndicesBlob = ref meshData.Indices.Value;
-            var originalVertices = new NativeArray<float3>(originalVerticesBlob.Length, Allocator.TempJob);
-            var newIndices = new NativeArray<int>(originalIndicesBlob.Length, Allocator.TempJob);
-            for (int i = 0; i < originalVerticesBlob.Length; i++)
-                originalVertices[i] = originalVerticesBlob[i];
-            for (int i = 0; i < originalIndicesBlob.Length; i++)
-                newIndices[i] = originalIndicesBlob[i];
-            uint validSeed = (uint)terrainData.Seed;
-            if (validSeed == 0) validSeed = 1;
-            var offsets = new NativeArray<float3>((int)terrainData.Octaves, Allocator.TempJob);
-            var random = new Unity.Mathematics.Random(validSeed);
-            for (int i = 0; i < terrainData.Octaves; i++)
-            {
-                offsets[i] = new float3(
-                    random.NextFloat(-10000f, 10000f),
-                    random.NextFloat(-10000f, 10000f),
-                    random.NextFloat(-10000f, 10000f)
-                );
-            }
-            var newVertices = new NativeArray<float3>(originalVertices.Length, Allocator.TempJob);
-            var job = new NoiseSculptingJob
-            {
-                inputVertices = originalVertices,
-                originalVertices = originalVertices,
-                octaveOffsets = offsets,
-                terrainType = terrainData.TerrainType,
-                minHeight = terrainData.MinHeight,
-                maxHeight = terrainData.MaxHeight,
-                baseFrequency = terrainData.BaseFrequency,
-                octaves = terrainData.Octaves,
-                persistence = terrainData.Persistence,
-                lacunarity = terrainData.Lacunarity,
-                validSeed = validSeed,
-                outputVertices = newVertices
-            };
-            job.Schedule(originalVertices.Length, 64).Complete();
-            offsets.Dispose();
-            var sculptedMeshData = CreateMeshDataComponent(newVertices, newIndices);
-            newVertices.Dispose();
-            newIndices.Dispose();
-            originalVertices.Dispose();
-            return sculptedMeshData;
-        }
-        
-        // SCHEDULED FOR DELETION - 2024-07-27 - @GitHubCopilot
-        // REASON: Replaced by Burst-accelerated parallel job implementation for performance
-        // TESTS TO PASS: TerrainGenerationSystemTests.cs, TerrainGenerationPerformanceTests.cs
-        /*
         private static MeshDataComponent ApplyNoiseSculpting(MeshDataComponent meshData, TerrainGenerationData terrainData)
         {
             ref var originalVertices = ref meshData.Vertices.Value;
             ref var originalIndices = ref meshData.Indices.Value;
             
-            var newVertices = new NativeArray<float3>(originalVertices.Length, Allocator.TempJob);
-            var newIndices = new NativeArray<int>(originalIndices.Length, Allocator.TempJob);
+            var newVertices = new NativeArray<float3>(originalVertices.Length, Allocator.Temp);
+            var newIndices = new NativeArray<int>(originalIndices.Length, Allocator.Temp);
             
             // Copy indices (they don't change)
             for (int i = 0; i < originalIndices.Length; i++)
@@ -902,7 +723,6 @@ namespace TinyWalnutGames.TTG.TerrainGeneration
             newIndices.Dispose();
             return sculptedMeshData;
         }
-        */
         
         private static float GetPerlinNoise3D(float x, float y, float z)
         {

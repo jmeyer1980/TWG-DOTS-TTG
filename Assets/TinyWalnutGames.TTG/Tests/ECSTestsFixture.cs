@@ -96,35 +96,28 @@ namespace TinyWalnutGames.TTG.TerrainGeneration.Tests
             if (Manager.HasComponent<MeshDataComponent>(entity))
             {
                 var meshData = Manager.GetComponentData<MeshDataComponent>(entity);
-
+                
+                // Check if blob assets are still valid before disposing
                 if (meshData.Vertices.IsCreated)
                 {
                     meshData.Vertices.Dispose();
-                    meshData.Vertices = default; // Prevent double-dispose
                 }
-
+                
                 if (meshData.Indices.IsCreated)
                 {
                     meshData.Indices.Dispose();
-                    meshData.Indices = default; // Prevent double-dispose
                 }
-
-                // Write back the updated struct to the entity
-                Manager.SetComponentData(entity, meshData);
             }
-
+            
             if (Manager.HasComponent<TerraceConfigData>(entity))
             {
                 var terraceConfig = Manager.GetComponentData<TerraceConfigData>(entity);
-
+                
+                // Check if blob asset is still valid before disposing
                 if (terraceConfig.TerraceHeights.IsCreated)
                 {
                     terraceConfig.TerraceHeights.Dispose();
-                    terraceConfig.TerraceHeights = default; // Prevent double-dispose
                 }
-
-                // Write back the updated struct to the entity
-                Manager.SetComponentData(entity, terraceConfig);
             }
         }
     }
